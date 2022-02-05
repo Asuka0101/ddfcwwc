@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const database = require("quick.db")
+const database = require("croxydb")
 const ayarlar = require("../ayarlar.json")
 const client = new Discord.Client();
 
@@ -14,15 +14,10 @@ exports.run = async(client, message, member, args) => {
   if (!message.member.voice.channel) return message.channel.send('**Bir Ses Kanalına Girmelisin!**')
 if(message.member.voice.channel.members.size < 2) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")
   
-      var yetkili = `${message.member.voice.channel.members.filter(a => a.id).random()}`
-       var üye = `${message.member.voice.channel.members.filter(a => a.id).random()}`
   
-     
 
-  return message.channel.send(`**Soru Soran:** ${yetkili} \n **Soru Sorulan:** ${üye} \n\n\`Eğer Her 2 kısımda aynı kişiye denk geliyorsa tekrar komutu kullanın!\``)
+  return message.channel.send(`**Soru Soran:** ${yetkili}`)
   
-  database.set(`sorusoran_${message.guild.id}`, yetkili.id)
-  database.set(`sorusorulan_${message.guild.id}`, üye.id)
   }
 
 exports.conf = {

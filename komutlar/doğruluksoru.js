@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const database = require("quick.db")
+const database = require("croxydb")
 const ayarlar = require("../ayarlar.json")
 const client = new Discord.Client();
 

@@ -13,7 +13,7 @@ let prefix = ayarlar.prefix
 
 **${prefix}cesaretsoru ::** __Random Birine Cesaret Sorusu Sorur.__
 **${prefix}doğruluksoru ::** __Random Birine Doğruluk Sorusu Sorur.__
-**${prefix}sorusoran ::** __Soru Soranı Ayarlarsınız.__
+**${prefix}çevir ::** __Soru Soranı Ayarlarsınız.__
 **${prefix}not ::** __Kesinlikle Okuyun Acayip Önemli.__
             
             

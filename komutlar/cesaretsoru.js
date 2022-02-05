@@ -1,11 +1,11 @@
 const Discord = require('discord.js');
-const database = require("quick.db")
+const database = require("croxydb")
 const ayarlar = require("../ayarlar.json")
 const client = new Discord.Client();
 
 exports.run = (client, message, member, args) => {
   
-let yetkili = database.fetch(`sorusoran_${message.guild.id}`)
+let yetkili = database.fetch(`sorusoran_${message.id}`)
 
 let kanal = ayarlar.dcchat
 
@@ -23,7 +23,7 @@ if(message.member.voice.channel.members.size < 2) return message.channel.send("O
         ]
       var doğruluk = sorular[Math.floor(Math.random() * sorular.length)];
   
-  let üye = database.fetch(`sorusorulan_${message.guild.id}`)
+  let üye = database.fetch(`sorusorulan_${message.id}`)
 
   return message.channel.send(`${message.author.id} Adlı Kullanıcı ${üye} Adlı Katılımcıya Cesaret Sorusu Sordu. \n \n **Soru:** \`${doğruluk}\``)
   }
