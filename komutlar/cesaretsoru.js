@@ -14,12 +14,12 @@ if(message.member.voice.channel.members.size < 5) return message.channel.send("O
 
 
       var sorular = [
-        '**Sevdiğin Kişiyi Kim?',
+        '**Sevdiğin Kişi Kim?**',
         'Siz Çoğaltabilirsiniz Bu Şekilde'
         ]
       var doğruluk = sorular[Math.floor(Math.random() * sorular.length)];
 
-  return message.channel.send(`${message.author.id} Adlı Kullanıcı ${message.member.voice.channel.members.filter(a => a.id!).random()} Adlı Katılımcıya Cesaret Sorusu Sordu. \n \n **Soru:** \`${doğruluk}\``)
+  return message.channel.send(`${message.author.id} Adlı Kullanıcı ${message.member.voice.channel.members.filter(a => a.id).random()} Adlı Katılımcıya Cesaret Sorusu Sordu. \n \n **Soru:** \`${doğruluk}\``)
   }
 
 exports.conf = {
