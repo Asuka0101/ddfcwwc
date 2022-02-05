@@ -12,8 +12,8 @@ if(message.member.voice.channel.members.size < 2) return message.channel.send("O
   
       var yetkili = `${message.member.voice.channel.members.filter(a => a.id).random()}`
   
-      database.set(`sorusoran_${yetkili.id}`)
-
+     
+database.set(`sorusoran_${yetkili.id}`)
   return message.channel.send(`**Soru Soran:** ${yetkili}`)
   }
 
