@@ -5,7 +5,7 @@ exports.run = async(client, message, args, member) => {
 
 
 
-    let katılımcı = message.mentions.members.first();
+    let katılımcı = message.author
  
     luffyy.push(`dc.${katılımcı.id}`, { userID: katılımcı.id});
 

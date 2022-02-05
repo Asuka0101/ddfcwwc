@@ -1,27 +1,28 @@
 const Discord = require('discord.js');
-const luffyy = require("quick.db")
+const database = require("quick.db")
 const ayarlar = require("../ayarlar.json")
 const client = new Discord.Client();
 
-exports.run = (client, message, member) => {
+exports.run = async(client, message, member, args) => {
   
    if (!message.member.roles.cache.has(ayarlar.dcyetkili)) return message.channel.send("**Bu Komutu Kullanmak İçin Yetkili Olmalısın!**")
   
-let sicil = x.map((data, index) => `**[${data.Tip || "belirtilmemiş"}]** <@!${data.adminID || "belirtilmemiş"}> tarafından \`${data.start || "belirtilmemiş"}\` tarihinde cezalandırıldı. \`#${data.cezaID || "Bulunamadı"}\``);
-
-
-
+  
+  
+  let member1 = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.author;
+  let katılımcı = message.guild.member(member1)
+   let db = await database.fetch(`dc.${katılımcı.id}`);
+  let üyeler = db.map((data, index) => `**[<@!${data.userID}>]**`);
       var üye = üyeler[Math.floor(Math.random() * üyeler.length)];
 
 
-       var luffyy = [
-       luffyy.fetch(`katılımcı_${member.guild.id}`)
-        ]
+        
+  let luffyy = db.map((data, index) => `**[<@!${data.userID}>]**`);
       var yetkili = luffyy[Math.floor(Math.random() * luffyy.length)];
   
-luffyy.set(`sorusoran_${member.guild.id}`, yetkili.id)
+database.set(`sorusoran_${yetkili.id}`)
 
-  return message.channel.send(`**Soru Soran:** ${yetkili} \n **Soruyu Cevaplıcak:** ${üye} `)
+  return message.channel.send(`**Soru Soran:** ${yetkili} \n**Soruyu Cevaplıcak:** ${üye} `)
   }
 
 exports.conf = {
