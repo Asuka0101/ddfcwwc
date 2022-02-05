@@ -7,9 +7,10 @@ exports.run = (client, message, member) => {
   
    if (!message.member.roles.cache.has(ayarlar.dcyetkili)) return message.channel.send("**Bu Komutu Kullanmak İçin Yetkili Olmalısın!**")
   
-  var üyeler = [
-       luffyy.fetch(`katılımcı_${member.guild.id}`)
-        ]
+let sicil = x.map((data, index) => `**[${data.Tip || "belirtilmemiş"}]** <@!${data.adminID || "belirtilmemiş"}> tarafından \`${data.start || "belirtilmemiş"}\` tarihinde cezalandırıldı. \`#${data.cezaID || "Bulunamadı"}\``);
+
+
+
       var üye = üyeler[Math.floor(Math.random() * üyeler.length)];
 
 

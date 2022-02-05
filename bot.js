@@ -22,7 +22,11 @@ const log = message => {
 ////////////// ALT KISMA DOKUNMAYIN
 require("./util/eventLoader")(client);
 
-client.login(ayarlar.token);
+client.on("ready", () => {
+  console.log(`Bütün komutlar başarıyla yüklendi!`);
+  client.user.setStatus("idle")
+  client.user.setActivity('Luffyy Was Here!')
+})
 
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();

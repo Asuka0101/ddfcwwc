@@ -5,9 +5,9 @@ exports.run = async(client, message, args, member) => {
 
 
 
-    let katılımcı = message.author.id
+    let katılımcı = message.mentions.members.first();
  
-    luffyy.set(`katılımcı_${member.guild.id}`)
+    luffyy.push(`dc.${katılımcı.id}`, { userID: katılımcı.id});
 
     message.channel.send("Başarıyla Oyuna Katıldın!")
       
