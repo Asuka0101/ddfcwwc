@@ -4,18 +4,13 @@ const client = new Discord.Client();
 
 exports.run = (client, message, member, args) => {
   
-  let member1 = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.author;
-  let yetkili = message.guild.member(member1)
-  
-let sorusoran = luffyy.fetch(`sorusoran_${yetkili.id}`)
+
   
   
-if(!message.member.roles.cache.has(sorusoran)) return message.channel.send(`**Bu Komutu Kullanmak İçin Gerekli Yetkiniz Yok!**`)
+if (!message.member.voice.channel) return message.channel.send('**Bir Ses Kanalına Girmelisin!**')
+if(message.member.voice.channel.members.size < 5) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")///kaç kişi olduğunu değiştirebilirsiniz ben 5 yaptım
   
-  var üyeler = [
-       luffyy.fetch(`katılımcı_${member.guild.id}`)
-        ]
-      var üye = üyeler[Math.floor(Math.random() * üyeler.length)];
+
 
 
       var sorular = [
@@ -24,7 +19,7 @@ if(!message.member.roles.cache.has(sorusoran)) return message.channel.send(`**Bu
         ]
       var doğruluk = sorular[Math.floor(Math.random() * sorular.length)];
 
-  return message.channel.send(`${message.author.id} Adlı Kullanıcı ${üye} Adlı Katılımcıya Cesaret Sorusu Sordu. \n \n **Soru:** \`${doğruluk}\``)
+  return message.channel.send(`${message.author.id} Adlı Kullanıcı ${message.member.voice.channel.members.filter(a => a.id!).random()} Adlı Katılımcıya Cesaret Sorusu Sordu. \n \n **Soru:** \`${doğruluk}\``)
   }
 
 exports.conf = {

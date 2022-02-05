@@ -10,13 +10,13 @@ exports.run = async(client, message, member, args) => {
   
   
  
-   let db = await database.fetch(`dc.${katılımcı.id}`);
-  let üyeler = db.map((data, index) => `**[<@!${data.userID}>]**`);
+   
+  let üyeler = database.fetch(`<@!${member.userID}>`);
       var üye = üyeler[Math.floor(Math.random() * üyeler.length)];
 
 
         
-  let luffyy = db.map((data, index) => `**[<@!${data.userID}>]**`);
+  let luffyy = database.fetch(`<@!${member.userID}>`);
       var yetkili = luffyy[Math.floor(Math.random() * luffyy.length)];
   
 
