@@ -9,9 +9,8 @@ exports.run = async(client, message, member, args) => {
   
   
   
-  let member1 = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.author;
-  let katılımcı = message.guild.member(member1)
-   let db = await database.fetch(`dc.${katılımcı.id}`);
+ 
+   let db = await database.get(`dc.${katılımcı.id}`);
   let üyeler = db.map((data, index) => `**[<@!${data.userID}>]**`);
       var üye = üyeler[Math.floor(Math.random() * üyeler.length)];
 
@@ -20,7 +19,7 @@ exports.run = async(client, message, member, args) => {
   let luffyy = db.map((data, index) => `**[<@!${data.userID}>]**`);
       var yetkili = luffyy[Math.floor(Math.random() * luffyy.length)];
   
-database.set(`sorusoran_${yetkili.id}`)
+
 
   return message.channel.send(`**Soru Soran:** ${yetkili} \n**Soruyu Cevaplıcak:** ${üye} `)
   }

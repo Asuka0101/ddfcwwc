@@ -2,7 +2,10 @@ const Discord = require('discord.js');
 const luffyy = require("quick.db")
 const client = new Discord.Client();
 
-exports.run = (client, message, member) => {
+exports.run = (client, message, member, args) => {
+  
+  let member1 = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.author;
+  let yetkili = message.guild.member(member1)
   
 let sorusoran = luffyy.fetch(`sorusoran_${yetkili.id}`)
   
