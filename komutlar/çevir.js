@@ -10,7 +10,7 @@ exports.run = async(client, message, member, args) => {
   
   
  
-   let db = await database.get(`dc.${katılımcı.id}`);
+   let db = await database.fetch(`dc.${katılımcı.id}`);
   let üyeler = db.map((data, index) => `**[<@!${data.userID}>]**`);
       var üye = üyeler[Math.floor(Math.random() * üyeler.length)];
 
