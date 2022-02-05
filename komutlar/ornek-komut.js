@@ -1,20 +1,30 @@
 const Discord = require('discord.js');
+const luffyy = require("quick.db")
+const client = new Discord.Client();
 
-exports.run = (client, message, args) => {
+exports.run = (client, message) => {
   
-  message.channel.send('Ornek komut calistirildi')
-  
-};
+  var üyeler = [
+        db.fetch
+        ]
+      var üye = üyeler[Math.floor(Math.random() * üyeler.length)];
+
+
+      var sorular = [
+        '**Sevdiğin Kişiyi Söyle!',
+        'Siz Çoğaltabilirsiniz Bu Şekilde'
+        ]
+      var doğruluk = sorular[Math.floor(Math.random() * sorular.length)];
+
+  }
 
 exports.conf = {
   enabled: true,
   guildOnly: false,
-  aliases: ['ornek'],
+  aliases: [],
   permLevel: 0
 };
 
 exports.help = {
-  name: 'ornek',
-  description: 'murat eren bos altyapi ornek komut',
-  usage: '<prefix> ornek'
+  name: 'doğruluksoru',
 };
