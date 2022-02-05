@@ -4,6 +4,11 @@ const client = new Discord.Client();
 
 exports.run = (client, message, member) => {
   
+  let sorusoran = db.fetch(`yetkilir_${message.guild.id}`)
+  
+  
+if(!message.member.roles.cache.has(sorusoran)) return message.channel.send(`**Bu Komutu Kullanmak İçin Gerekli Yetkiniz Yok!**`)
+  
   var üyeler = [
        luffyy.fetch(`katılımcı_${member.guild.id}`)
         ]
