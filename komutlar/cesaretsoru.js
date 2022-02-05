@@ -1,18 +1,17 @@
 const Discord = require('discord.js');
-const luffyy = require("quick.db")
+const database = require("quick.db")
 const client = new Discord.Client();
 
 exports.run = (client, message, member, args) => {
   
+let yetkili = database.fetch(`sorusoran_${message.guild.id}`)
 
+ if(message.author.id !== yetkili) return message.reply(`**Bu Komutu Sadece Soru Soran Kişi Kullanabilir!**`);
   
   
 if (!message.member.voice.channel) return message.channel.send('**Bir Ses Kanalına Girmelisin!**')
-if(message.member.voice.channel.members.size < 5) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")///kaç kişi olduğunu değiştirebilirsiniz ben 5 yaptım
+if(message.member.voice.channel.members.size < 2) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")///kaç kişi olduğunu değiştirebilirsiniz ben 5 yaptım
   
-
-
-
       var sorular = [
         '**Sevdiğin Kişi Kim?**',
         'Siz Çoğaltabilirsiniz Bu Şekilde'

@@ -13,6 +13,7 @@
     "moment": "^2.29.1",
     "chalk": "^4.1.0",
     "jimp": "^0.16.1",
+    "discord-buttons": "^4.0.0",
     "quick.db": "^7.1.2"
   },
   "engines": {
