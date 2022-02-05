@@ -2,20 +2,21 @@ const Discord = require('discord.js');
 const luffyy = require("quick.db")
 const client = new Discord.Client();
 
-exports.run = (client, message) => {
+exports.run = (client, message, member) => {
   
   var üyeler = [
-        db.fetch
+       luffyy.fetch(`katılımcı_${member.guild.id}`)
         ]
       var üye = üyeler[Math.floor(Math.random() * üyeler.length)];
 
 
       var sorular = [
-        '**Sevdiğin Kişiyi Söyle!',
+        '**En Sevdiğin Kişi?**',
         'Siz Çoğaltabilirsiniz Bu Şekilde'
         ]
       var doğruluk = sorular[Math.floor(Math.random() * sorular.length)];
 
+  return message.channel.send(`${message.author.id} Adlı Kullanıcı ${üye} Adlı Katılımcıya Doğruluk Sorusu Sordu. \n \n **Soru:** \`${doğruluk}\``)
   }
 
 exports.conf = {

@@ -7,7 +7,7 @@ module.exports = client => {
   var degisenOynuyor = [
     
     "Murat Eren",
-    "V12 Bos Altyapi by võíd"
+    "Luffyy Was Here!"
     
   ]
   
@@ -17,6 +17,6 @@ module.exports = client => {
 
 }, 2 * 30000);
   
-  client.user.setStatus("online"); //dnd, idle, online, offline
+  client.user.setStatus("idle"); //dnd, idle, online, offline
   
 }

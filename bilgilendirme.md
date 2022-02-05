@@ -1,4 +1,4 @@
-# Murat Eren Bos Altyapi
+# Murat Eren Doğruluk Cesaretlilik Botu Made By Luffyy
 
 #### Lisans Bilgileri ve telif hakki
 Altyapi Murat Eren YouTube kanali adina yapilmis olup herhangi bir sekilde izinsiz olarak paylasilmasi halinde paylasan kisiye lisanslamaya dayanilarak telif ve diger adli islemler uygulanacaktir.
@@ -16,13 +16,14 @@ Oynuyor kismi ```ready.js``` dosyasindadir.
 
 Herhangi bir yardima ihtiyaciniz olursa Murat Eren "YouTube" sunucusundaki altyapi destek kanalindan yardim alabilirsiniz.
 
-   ```ornek-komut.js``` dosyasi icindeki kodu referans olarak kullanabilirsiniz
+  
    
 ---
 
 #### Iletisim ve diger bilgiler
-Altyapi võíd#9932 tarafindan hazirlanmistir altyapi destek kanalindan ve ya direk altyapi sahibi ile goruserek sorunlarinizi giderebilirsiniz.
+Altyapi Luffyy#0031 tarafindan hazirlanmistir altyapi destek kanalindan ve ya direk altyapi sahibi ile goruserek sorunlarinizi giderebilirsiniz.
 
 [YouTube](https://youtube.com/c/MuratErenn "Murat Eren") 
 
-[Discord Sunucumuz](https://discord.gg/dPSK3BxrbD) 
+[Discord Sunucumuz](https://discord.gg/Ds7QdNmGqJ) 
+
