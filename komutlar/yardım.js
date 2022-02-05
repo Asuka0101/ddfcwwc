@@ -14,14 +14,16 @@ Arkadaşlar Komutları Komutlar Menüsünden Öğrenebilirsiniz.
 
 **Gelelim Önemli Kısma;**
 
-Arkadaşlar Çevir Komutu Her Cevaptan Sonra Tekrar Kullanıyorsunuz! tekrar soru soran çıkar ve ya tekrar cevaplayan çıkarsa komutu tekrar kullanarak değiştirebilirsiniz!
+Arkadaşlar Çevir Komutu Her Cevaptan Sonra Tekrar Kullanıyorsunuz! tekrar soru soran çıkarsa komutu tekrar kullanarak değiştirebilirsiniz!
 
-Soru Soran ve Cevaplayayını Ayarlayan Doğruluk Cesaretlilik Sorumlusudur. \`ayarlar.json\` kısmında \`dcyetkili\` kısmına rol idsini koyun. yoksa çalışmaz!! 
-**${prefix}çevir Komutu Soru Soranı ve Cevaplayanı Ayarlar!**
+Soru Soranı Ayarlayan Doğruluk Cesaretlilik Sorumlusudur. \`ayarlar.json\` kısmında \`dcyetkili\` kısmına rol idsini koyun. yoksa çalışmaz!! 
+**${prefix}çevir Komutu Soru Soranı Ayarlar!**
 
 Ayrıca \`ayarlar.json\` Kanalından Dc Chatı Ayarlamayı Unutmayın!
 
 Komutlarda Soruları Çoğaltabilirsiniz.
+
+Sistem aç kapat komutuda sadece belirlediğiniz zamanlarda 
 
 Malesefki Kişi İstediği Kısımda Soru Sorulmasını Ayarlayamadım. Soru Soran İstediği Tarzda Soru Soruyor
 
