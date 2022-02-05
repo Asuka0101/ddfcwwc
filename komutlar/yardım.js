@@ -23,7 +23,7 @@ Ayrıca \`ayarlar.json\` Kanalından Dc Chatı Ayarlamayı Unutmayın!
 
 Komutlarda Soruları Çoğaltabilirsiniz.
 
-Sistem aç kapat komutuda sadece belirlediğiniz zamanlarda 
+Sistem aç kapat komutuda sadece belirlediğiniz zamanlarda dc oynamanıza yarıyor ister açarsınız ister kapatırsınız. 
 
 Malesefki Kişi İstediği Kısımda Soru Sorulmasını Ayarlayamadım. Soru Soran İstediği Tarzda Soru Soruyor
 

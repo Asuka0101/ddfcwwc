@@ -1,9 +1,14 @@
 const Discord = require('discord.js');
-const database = require("croxydb")
+const db = require("croxydb")
 const ayarlar = require("../ayarlar.json")
 const client = new Discord.Client();
 
 exports.run = (client, message, member, args) => {
+  
+    if(db.fetch(`sistem`)) {
+  if(message.author.id !== ayarlar.dcyetkili) {return message.channel.send('Şuanda Sistem Kapalıdır')}
+}
+  
 
 
 let kanal = ayarlar.dcchat
