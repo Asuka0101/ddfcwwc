@@ -25,13 +25,40 @@ if(message.member.voice.channel.members.size < 2) return message.channel.send("O
 
       var sorular = [
         '**Luffyyi Seviyormusun?**',
-        'Siz Çoğaltabilirsiniz Bu Şekilde'
+        'Siz Çoğaltabilirsiniz Bu Şekilde',,
+       ' 1- Görünmez olsan ilk olarak ne yapardın?',
+
+'2- Herkesten sakladığın en büyük sırrın ne?',
+
+'3- Sosyal medyada en son kimi stalkladın?',
+
+'4- Üç dilek hakkın olsa bunları ne için kullanırdın?',
+
+'5- Yarın piyango sana çıksa satın alacağın ilk şey ne olurdu?',
+
+'6- Birini ekmek için hangi yalanı söylersin?',
+
+'7- En son kime, ne yalan söyledin?',
+
+'En utanç verici ilk buluşma anını anlat.',
+
+'Issız bir adaya düşsen yanına alacağın 5 şey nedir?',,
+'En son ne zaman, ne için ağladın?',
+'Ömrünün sonuna kadar sadece tek bir şarkı dinleyebilecek olsan bu ne olurdu?',
+'Ömrünün sonuna kadar sadece tek bir şey yiyebilecek olsan bu ne olurdu?',
+'Bugüne kadar gördüğün en garip rüya neydi?',
+'En büyük korkun ne?',
+'İnsanların senin hakkındaki en büyük yanılgılarının ne olduğunu düşünüyorsun?',
+'Hoşlanmadığın bir ortamdan kaçmak için hiç yalan söyledin mi?',
+'En son ne için para harcadığına pişman oldun?',
+'Hayatının en güzel/kötü gününü anlat.',
+'Bu masadaki birinin yerine geçecek ve onun hayatını yaşayacak olsan bu kim olurdu?'
+
+
         ]
       var doğruluk = sorular[Math.floor(Math.random() * sorular.length)];
-  
-  let üye = database.fetch(`sorusorulan_${message.guild.id}`)
 
-  return message.channel.send(`<@!${message.author.id}> Adlı Kullanıcı ${message.member.voice.channel.members.filter(a => a.id !== message.author.id).random()} Adlı Katılımcıya Cesaret Sorusu Sordu. \n \n **Soru:** \`${doğruluk}\``)
+  return message.channel.send(`<@!${message.author.id}> Adlı Kullanıcı ${message.member.voice.channel.members.filter(a => a.id !== message.author.id).random()} Adlı Katılımcıya doğruluk sorusu sordu \n \n **Soru:** \`${doğruluk}\``)
   }
 
 exports.conf = {
