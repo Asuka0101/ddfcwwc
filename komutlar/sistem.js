@@ -10,12 +10,12 @@ exports.run = (client, message, args) => {
   if(!args[0]) return message.channel.send('**Doğruluk Cesaretlilik Sistemini Açmak için ; **!dcsistem aç** kapatmak İçin; **!dcsistem kapat')
   
   if(args[0] === 'kapat') {
-    if(db.fetch(`bakim`)) return message.channel.send('Sistem zaten kapalı')
+    if(db.fetch(`sistem`)) return message.channel.send('Sistem zaten kapalı')
     message.channel.send('Sistem Kapatıldı.')
     db.set(`sistem`, 'acik')
   }
   if(args[0] === 'aç'){
-    if(!db.fetch(`bakim`)) return message.channel.send('Sistem zaten açık.')
+    if(!db.fetch(`sistem`)) return message.channel.send('Sistem zaten açık.')
     message.channel.send('Sistem Açıldı.')
     db.delete(`sistem`)
   }

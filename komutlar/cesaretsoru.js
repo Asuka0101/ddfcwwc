@@ -21,7 +21,10 @@ if(message.member.voice.channel.members.size < 2) return message.channel.send("O
   
       var sorular = [
         '**Sevdiğin Kişi Kim?**',
-        'Siz Çoğaltabilirsiniz Bu Şekilde'
+        'dfddfsds dxlö lözxcşlxöz öszxclğşöxzc dxczözxclşzcxö',
+        "şxşxcçc",
+        "dxiçxciv",
+        'xxcxS'
         ]
       var doğruluk = sorular[Math.floor(Math.random() * sorular.length)];
   
