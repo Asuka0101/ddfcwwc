@@ -18,30 +18,21 @@ let kanal = ayarlar.dcchat
   
   
 if (!message.member.voice.channel) return message.channel.send('**Bir Ses Kanalına Girmelisin!**')
-if(message.member.voice.channel.members.size < 2) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")///kaç kişi olduğunu değiştirebilirsiniz ben 5 yaptım
+if(message.member.voice.channel.members.size < -1) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")///kaç kişi olduğunu değiştirebilirsiniz ben 5 yaptım
   
 
 
 
       var sorular = [
-        '**Luffyyi Seviyormusun?**',
-        'Siz Çoğaltabilirsiniz Bu Şekilde',,
-       ' 1- Görünmez olsan ilk olarak ne yapardın?',
-
-'2- Herkesten sakladığın en büyük sırrın ne?',
-
-'3- Sosyal medyada en son kimi stalkladın?',
-
-'4- Üç dilek hakkın olsa bunları ne için kullanırdın?',
-
-'5- Yarın piyango sana çıksa satın alacağın ilk şey ne olurdu?',
-
-'6- Birini ekmek için hangi yalanı söylersin?',
-
-'7- En son kime, ne yalan söyledin?',
-
+'Siz Çoğaltabilirsiniz Bu Şekilde',,
+'Görünmez olsan ilk olarak ne yapardın?',
+'Herkesten sakladığın en büyük sırrın ne?',
+'Sosyal medyada en son kimi stalkladın?',
+'Üç dilek hakkın olsa bunları ne için kullanırdın?',
+'Yarın piyango sana çıksa satın alacağın ilk şey ne olurdu?',
+'Birini ekmek için hangi yalanı söylersin?',
+'En son kime, ne yalan söyledin?',
 'En utanç verici ilk buluşma anını anlat.',
-
 'Issız bir adaya düşsen yanına alacağın 5 şey nedir?',,
 'En son ne zaman, ne için ağladın?',
 'Ömrünün sonuna kadar sadece tek bir şarkı dinleyebilecek olsan bu ne olurdu?',
