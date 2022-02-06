@@ -17,7 +17,7 @@ exports.run = async(client, message, member, args) => {
    
   
   if (!message.member.voice.channel) return message.channel.send('**Bir Ses Kanalına Girmelisin!**')
-if(message.member.voice.channel.members.size < 2) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")
+if(message.member.voice.channel.members.size < -2) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")
   
   var yetkili = `${message.member.voice.channel.members.filter(a => a.id !== message.author.id).random()}`
 
