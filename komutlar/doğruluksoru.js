@@ -18,7 +18,7 @@ let kanal = ayarlar.dcchat
   
   
 if (!message.member.voice.channel) return message.channel.send('**Bir Ses Kanalına Girmelisin!**')
-if(message.member.voice.channel.members.size < -1) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")///kaç kişi olduğunu değiştirebilirsiniz ben 5 yaptım
+if(message.member.voice.channel.members.size < -2) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")///kaç kişi olduğunu değiştirebilirsiniz ben 5 yaptım
   
 
 

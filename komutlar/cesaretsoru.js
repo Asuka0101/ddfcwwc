@@ -17,7 +17,7 @@ if(message.channel.id !== kanal) return message.channel.send(`** Bu komudu sadec
   
   
 if (!message.member.voice.channel) return message.channel.send('**Bir Ses Kanalına Girmelisin!**')
-if(message.member.voice.channel.members.size < -1) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")///kaç kişi olduğunu değiştirebilirsiniz ben 5 yaptım
+if(message.member.voice.channel.members.size < -2) return message.channel.send("Oyunu Oynayabilmek İçin 5 Kişi Lazım!")///kaç kişi olduğunu değiştirebilirsiniz ben 5 yaptım
   
       var sorular = [
 'Sevdiğin Kişi Kim?',
@@ -41,8 +41,9 @@ if(message.member.voice.channel.members.size < -1) return message.channel.send("
 'Herkesin önünde en sevdiğin şarkıyı baştan sona söyle.',
 'Instagramda karşına çıkan ilk 5 hikayeye cevap ver.',
 'Sıradaki 5 dakika boyunca masadakiler ne derse onu yap.',
-'Bir gün boyunca sadece arkadaşlarının zevkine göre giyin.,'
-
+'Bir gün boyunca sadece arkadaşlarının zevkine göre giyin.,',
+'qwdjqwhdjwqodqwhdıpqwdjoqwodljpqowşdjqw,',
+'qwdjqwhdjwqodqwhdıpqwdjoqwodljpqowşdjqw,'
         ]
       var doğruluk = sorular[Math.floor(Math.random() * sorular.length)];
   
